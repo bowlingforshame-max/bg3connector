@@ -1,12 +1,12 @@
 """BG3 Connector package."""
 
+from .matcher import compatibility_score, match_players
 from .models import PlayerPreferences
-from .matcher import match_players, compatibility_score
-from .storage import PreferenceStore
+from .storage import PreferenceRepository
 
 __all__ = [
     "PlayerPreferences",
     "match_players",
     "compatibility_score",
-    "PreferenceStore",
+    "PreferenceRepository",
 ]
