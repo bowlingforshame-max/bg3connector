@@ -1,0 +1,11 @@
+[project]
+name = "bg3connector"
+version = "0.1.0"
+description = "Simple matchmaking helper for Baldur's Gate 3 players"
+authors = [{name = "BG3 Connector Team"}]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+bg3connector = "bg3connector.cli:main"
