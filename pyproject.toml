@@ -1,0 +1,15 @@
+[project]
+name = "bg3connector"
+version = "0.2.0"
+description = "Matchmaking helper for Baldur's Gate 3 players with a FastAPI backend"
+authors = [{name = "BG3 Connector Team"}]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "fastapi>=0.109,<1.0",
+    "httpx>=0.25,<1.0",
+    "uvicorn[standard]>=0.23,<1.0",
+]
+
+[project.scripts]
+bg3connector = "bg3connector.cli:main"
